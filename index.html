@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistant.Lease - the pricing assistant for the leasing team</title>
+    <meta
+      name="description"
+      content="Assistant.Lease is a single-tenant weekly rental pricing assistant for institutional Australian leasing teams. Catchment-bounded, audit-ready, human-reviewed."
+    />
+    <meta property="og:title" content="Assistant.Lease" />
+    <meta
+      property="og:description"
+      content="The pricing assistant for the leasing team. Built for institutional Australian residential operators."
+    />
+    <meta name="theme-color" content="#01696F" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Assistant.Lease home">
+          <svg
+            class="brand-mark"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.5" />
+            <circle cx="14" cy="14" r="1.6" fill="currentColor" />
+          </svg>
+          <span class="brand-text">Assistant<span class="brand-dot">.</span>Lease</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#how">How it works</a>
+          <a href="#sally">Sally's week</a>
+          <a href="#moat">Why it matters</a>
+          <a href="#who">Who it's for</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            aria-label="Switch to dark mode"
+          ></button>
+          <a class="btn btn-primary" href="#contact">Book a demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Australian institutional rental, recalibrated</p>
+          <h1 class="hero-title">
+            The pricing assistant<br />
+            for the leasing team.
+          </h1>
+          <p class="hero-sub">
+            Assistant.Lease gives every unit type in every asset a defensible weekly rent. Built
+            from the live competitor set inside a strict local catchment. Reviewed and signed by a
+            named human. Single-tenant by design.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Book a demo</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+
+          <!-- Abstract catchment diagram -->
+          <figure class="catchment" aria-label="Catchment diagram: a target asset at the centre, with comparable listings inside a 3km ring">
+            <svg viewBox="0 0 720 360" role="img" aria-hidden="true">
+              <defs>
+                <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="currentColor" stop-opacity="0.12" />
+                  <stop offset="60%" stop-color="currentColor" stop-opacity="0.02" />
+                  <stop offset="100%" stop-color="currentColor" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <g transform="translate(360 180)">
+                <circle r="170" fill="url(#ringGlow)" />
+                <circle r="170" fill="none" stroke="currentColor" stroke-opacity="0.25" stroke-dasharray="2 6" />
+                <circle r="115" fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-dasharray="2 4" />
+                <circle r="60" fill="none" stroke="currentColor" stroke-opacity="0.6" />
+                <!-- comp dots -->
+                <g fill="currentColor">
+                  <circle cx="-145" cy="-30" r="3" opacity="0.55" />
+                  <circle cx="-90" cy="80" r="3" opacity="0.55" />
+                  <circle cx="40" cy="120" r="3" opacity="0.55" />
+                  <circle cx="130" cy="40" r="3" opacity="0.55" />
+                  <circle cx="100" cy="-90" r="3" opacity="0.55" />
+                  <circle cx="-30" cy="-140" r="3" opacity="0.55" />
+                  <circle cx="-160" cy="40" r="3" opacity="0.55" />
+                  <circle cx="20" cy="-50" r="3" opacity="0.7" />
+                  <circle cx="-60" cy="30" r="3" opacity="0.7" />
+                  <circle cx="50" cy="40" r="3" opacity="0.7" />
+                  <circle cx="-40" cy="-30" r="3" opacity="0.7" />
+                </g>
+                <!-- subject asset -->
+                <g class="subject-pulse">
+                  <circle r="10" fill="var(--color-primary)" />
+                  <circle r="18" fill="none" stroke="var(--color-primary)" stroke-opacity="0.5" />
+                </g>
+                <text x="0" y="42" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="11" font-family="Inter, system-ui">Subject asset</text>
+                <text x="0" y="-130" text-anchor="middle" fill="currentColor" opacity="0.4" font-size="11" font-family="Inter, system-ui">3km catchment</text>
+              </g>
+            </svg>
+            <figcaption>Every recommendation is bounded by a real-world catchment, not a national pool.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section section-how">
+        <div class="container">
+          <p class="eyebrow">How it works</p>
+          <h2 class="section-title">An assistant, not an autopilot.</h2>
+          <p class="section-lede">
+            Assistant.Lease proposes. The leasing team applies context. Sally reviews and signs.
+            Every step is captured, traceable, and built to be read by an investment committee or a
+            regulator.
+          </p>
+
+          <ol class="steps" role="list">
+            <li class="step">
+              <div class="step-num" aria-hidden="true">01</div>
+              <h3>Catchment-bounded comp set</h3>
+              <p>
+                For each subject asset, the assistant draws the live competitor offerings inside a
+                strict local catchment - default 3km, configurable. The comp set is auditable, and
+                every recommendation traces back to the listings that drove it. No national pool.
+                No cross-tenant sharing.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">02</div>
+              <h3>Standing prices with a freshness window</h3>
+              <p>
+                Every unit type carries a standing recommended weekly rent with an explicit TTL.
+                When the leasing team opens an asset, they see exactly how fresh each rent is. The
+                model only re-runs when the operator says so.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">03</div>
+              <h3>Outlier detection</h3>
+              <p>
+                When a refreshed standing price moves more than a configured threshold against its
+                previous standing price, it is flagged for human review before any memo is signed
+                off. No-one is blindsided by a 12% jump from a single new comp landing.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">04</div>
+              <h3>Override capture with reason chips</h3>
+              <p>
+                The leasing team can override any recommended rent with one of six structured
+                reasons (renovated, corner, ground floor, view, recent vacancy, other) plus a
+                free-text note. Every override is logged against the memo run-id.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">05</div>
+              <h3>Signed memo</h3>
+              <p>
+                Every pricing decision lands in a memo with a transparent narrative. The footer
+                records the comp set, the model, the override reasons, the freshness window, and
+                the named human who reviewed it. Audit trail as a product feature.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SALLY'S WEEK -->
+      <section id="sally" class="section section-sally">
+        <div class="container narrow">
+          <p class="eyebrow">A week in the life</p>
+          <h2 class="section-title">What the assistant does for Sally.</h2>
+          <p class="section-lede">
+            Sally is the asset manager. She is accountable for weekly rent decisions across a
+            portfolio of institutional residential assets. She does not write rules, she does not
+            tune models. She reviews recommendations, applies judgement, and signs.
+          </p>
+
+          <div class="timeline" role="list">
+            <article class="t-card" role="listitem">
+              <div class="t-meta">
+                <span class="t-day">Monday</span>
+                <span class="t-time">08:42</span>
+              </div>
+              <h3>Standing prices refresh overnight.</h3>
+              <p>
+                The assistant pulls the latest comp listings inside each asset's catchment, recomputes
+                the standing weekly rent for every unit type, and flags the moves that breach
+                Sally's outlier threshold. She opens her queue and sees a short, ranked list - not
+                a wall of data.
+              </p>
+            </article>
+
+            <article class="t-card" role="listitem">
+              <div class="t-meta">
+                <span class="t-day">Tuesday</span>
+                <span class="t-time">10:15</span>
+              </div>
+              <h3>Sally reviews the flagged assets.</h3>
+              <p>
+                Three two-bedrooms in an inner-city asset have moved up 4.2% week-on-week. The
+                assistant shows the exact six comps inside the 3km ring that drove the move, and
+                the narrative that summarises why. Sally agrees with two, overrides the third with
+                a "recent vacancy" reason chip and a one-line note. The override is logged.
+              </p>
+            </article>
+
+            <article class="t-card" role="listitem">
+              <div class="t-meta">
+                <span class="t-day">Wednesday</span>
+                <span class="t-time">14:30</span>
+              </div>
+              <h3>An on-site leasing executive answers an enquiry.</h3>
+              <p>
+                A prospect calls asking for the weekly rent on a one-bedroom in a different asset.
+                The leasing executive opens the asset in Assistant.Lease, sees the current standing
+                weekly rent for that unit type with the freshness window visible, and quotes it.
+                No spreadsheet, no email to head office. The number she quotes is the same number
+                Sally signed off on Monday.
+              </p>
+            </article>
+
+            <article class="t-card" role="listitem">
+              <div class="t-meta">
+                <span class="t-day">Thursday</span>
+                <span class="t-time">11:00</span>
+              </div>
+              <h3>Sally signs the weekly memo.</h3>
+              <p>
+                Each asset gets a pricing memo: the current standing rents, the changes since last
+                week, the comp set, the overrides applied, and the narrative. Sally adds her name
+                to the footer. The memo is ready to send to the asset owner, the investment
+                committee, or a regulator - because it is built to be read by all three.
+              </p>
+            </article>
+
+            <article class="t-card" role="listitem">
+              <div class="t-meta">
+                <span class="t-day">Friday</span>
+                <span class="t-time">16:00</span>
+              </div>
+              <h3>The audit trail closes the loop.</h3>
+              <p>
+                Every refresh, every flag, every override, every signed memo is captured against
+                its run-id. If anyone asks, six months from now, why the rent on a specific unit
+                moved on a specific week, the answer is one click away - with the comps, the
+                model, the reviewer, and the timestamp attached.
+              </p>
+            </article>
+          </div>
+
+          <p class="footnote">
+            Sally is a composite persona built from conversations with asset managers across the
+            Australian institutional rental sector. Asset names, addresses, and operator
+            identities have been removed.
+          </p>
+        </div>
+      </section>
+
+      <!-- MOAT / WHY IT MATTERS -->
+      <section id="moat" class="section section-moat">
+        <div class="container">
+          <p class="eyebrow">Why it matters</p>
+          <h2 class="section-title">Five things we will not compromise on.</h2>
+
+          <div class="pillars">
+            <article class="pillar">
+              <p class="pillar-num">01</p>
+              <h3>Single-tenant, no pooled data</h3>
+              <p>
+                The dominant North American pricing tools aggregate competitive data across all
+                their clients. That is the design choice now under DOJ consent decree in the US,
+                state-level bans accelerating, and increasing regulatory attention in Australia.
+                Assistant.Lease does not pool. Each operator's catchment data drives only their own
+                recommendations.
+              </p>
+            </article>
+            <article class="pillar">
+              <p class="pillar-num">02</p>
+              <h3>Catchment, not corpus</h3>
+              <p>
+                Every recommendation starts from "every competitor listing within 3km of this asset,
+                refreshed in the last 60 days." That is how a leasing team actually thinks about
+                its market - and it is why recommendations are defensible to an investment
+                committee in a way a national-corpus number never is.
+              </p>
+            </article>
+            <article class="pillar">
+              <p class="pillar-num">03</p>
+              <h3>Standing prices, not always-on recalculation</h3>
+              <p>
+                Operators do not need a real-time price for every unit every minute. They need a
+                fresh, defensible weekly rent that survives until they revisit it. Assistant.Lease
+                gives every unit type a recommended rent with a freshness window the operator
+                controls. The model re-runs only when the operator says so.
+              </p>
+            </article>
+            <article class="pillar">
+              <p class="pillar-num">04</p>
+              <h3>Assistant, not autopilot</h3>
+              <p>
+                Assistant.Lease is built to work with the leasing team, not over the top of it. The
+                assistant proposes, the leasing executive applies context, Sally reviews and signs.
+                Every override is captured with structured reasons. The asset owner can trace any
+                rent decision back to the comp set, the model, the override, the reviewer, and the
+                named person who signed it.
+              </p>
+            </article>
+            <article class="pillar">
+              <p class="pillar-num">05</p>
+              <h3>Australian-native</h3>
+              <p>
+                Built in Australia, against Australian listing data, with Australian catchment
+                radii, against the Australian PMS landscape, and with the Australian regulatory
+                tailwind in mind. We speak the language of postcodes, suburbs, weekly rent (not
+                monthly), and the local agent ecosystem.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO IT IS FOR -->
+      <section id="who" class="section section-who">
+        <div class="container">
+          <p class="eyebrow">Who it's for</p>
+          <h2 class="section-title">Institutional residential portfolios, end to end.</h2>
+
+          <div class="who-grid">
+            <article class="who-card">
+              <h3>Build-to-Rent operators</h3>
+              <p>
+                33 operating platforms, 51,000 apartments live, a sector shifting from delivery to
+                operations. The assistant gives each operator a single-tenant, audit-ready pricing
+                layer for every asset in the portfolio.
+              </p>
+            </article>
+            <article class="who-card">
+              <h3>Adjacent residential portfolios</h3>
+              <p>
+                Listed REITs, super-fund-backed platforms, community housing providers,
+                retirement and land-lease operators, PBSA. Roughly 802,000 addressable
+                dwellings and sites that share the same pricing problem.
+              </p>
+            </article>
+            <article class="who-card">
+              <h3>Family offices and HNW landlords</h3>
+              <p>
+                Relationship-led, smaller per family, fast decisions once trust is established.
+                The assistant gives a defensible weekly rent that stands up to family-office
+                governance without requiring an in-house revenue management team.
+              </p>
+            </article>
+            <article class="who-card">
+              <h3>Adjacent verticals</h3>
+              <p>
+                Self-storage, holiday and caravan parks, and commercial office leasing share the
+                same engine. Per-unit capacity, local catchment, public competitor rates,
+                weekly repricing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section-contact">
+        <div class="container narrow">
+          <p class="eyebrow">Book a demo</p>
+          <h2 class="section-title">A 60-minute walkthrough.</h2>
+          <p class="section-lede">
+            Two personas, three live screens. Sally's weekly review surface. The on-site
+            enquiry-time view. A signed memo. Then 48 minutes of your hardest questions.
+          </p>
+          <div class="contact-card">
+            <div>
+              <p class="contact-label">Direct</p>
+              <p class="contact-value">
+                <a href="mailto:imc@oceanmachine.ai">imc@oceanmachine.ai</a>
+              </p>
+              <p class="contact-name">Ian McDonald, Ocean Machine</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:imc@oceanmachine.ai?subject=Assistant.Lease%20demo%20request">Request a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">
+          Assistant<span class="brand-dot">.</span>Lease &nbsp;&middot;&nbsp; Built by Ocean Machine
+        </p>
+        <p class="footer-meta">
+          Single-tenant. Catchment-bounded. Audit-ready. Australian.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const t = document.querySelector('[data-theme-toggle]'),
+          r = document.documentElement;
+        let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+        r.setAttribute('data-theme', d);
+        const setIcon = () => {
+          t.setAttribute(
+            'aria-label',
+            'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode'
+          );
+          t.innerHTML =
+            d === 'dark'
+              ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+              : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        };
+        if (t) {
+          setIcon();
+          t.addEventListener('click', () => {
+            d = d === 'dark' ? 'light' : 'dark';
+            r.setAttribute('data-theme', d);
+            setIcon();
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
