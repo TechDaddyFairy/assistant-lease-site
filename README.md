@@ -1,4 +1,4 @@
-# Assistant.Lease
+# Canary
 
 The pricing assistant for the leasing team.
 
@@ -6,7 +6,7 @@ Single-page marketing site for [assistant.lease](https://assistant.lease), built
 
 ## What this is
 
-A static, three-file site that explains what Assistant.Lease does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and an abstract catchment diagram.
+A static, three-file site that explains what Canary does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and an abstract bird mark.
 
 ## Stack
 
