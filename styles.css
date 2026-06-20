@@ -404,8 +404,8 @@ button {
   color: var(--color-text-muted);
 }
 
-/* sally - timeline */
-.section-sally {
+/* week - timeline */
+.section-week {
   background: var(--color-surface-offset);
 }
 .timeline {
