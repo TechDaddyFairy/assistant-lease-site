@@ -1,12 +1,14 @@
-# Canary
+# Kestrel
 
-The pricing assistant for the leasing team.
+Pricing with provenance. Every recommendation, a one-page defence.
 
 Single-page marketing site for [assistant.lease](https://assistant.lease), built by Ocean Machine.
 
+Renamed from Canary on 21 June 2026. The product is Kestrel. The URL `assistant.lease` is unchanged.
+
 ## What this is
 
-A static, three-file site that explains what Canary does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and an abstract bird mark.
+A static, three-file site that explains what Kestrel does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and an abstract kestrel mark.
 
 ## Stack
 
@@ -21,7 +23,7 @@ A static, three-file site that explains what Canary does for an institutional le
 |---|---|
 | `index.html` | Single page. Semantic HTML. Inline dark-mode toggle script. |
 | `styles.css` | Design tokens, layout, responsive breakpoints. |
-| `favicon.svg` | Concentric circles mark in Ocean Machine teal. |
+| `favicon.svg` | Kestrel hovering silhouette in Ocean Machine teal. |
 | `DEPLOY.md` | Step-by-step deployment instructions (GitHub Pages path). |
 
 ## Brand
