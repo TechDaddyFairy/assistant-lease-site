@@ -1,14 +1,14 @@
-# Kestrel
+# orient
 
-Pricing with provenance. Every recommendation, a one-page defence.
+The rent is a direction. We point at it.
 
-Single-page marketing site for [assistant.lease](https://assistant.lease), built by Ocean Machine.
+Single-page marketing site for [withorient.com](https://withorient.com).
 
-Renamed from Canary on 21 June 2026. The product is Kestrel. The URL `assistant.lease` is unchanged.
+Brand history: Canary (initial) → Kestrel (briefly) → orient (current, from 22 June 2026). The compass-needle mark is the brand metaphor: the system takes an address and points at the right rent.
 
 ## What this is
 
-A static, three-file site that explains what Kestrel does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and an abstract kestrel mark.
+A static, three-file site that explains what orient does for an institutional leasing team - the asset manager who reviews and signs, and the on-site leasing executives who quote at the front desk. No screenshots, no real operator names, no real assets, no named personas - pure typography and a compass-needle mark.
 
 ## Stack
 
@@ -23,16 +23,13 @@ A static, three-file site that explains what Kestrel does for an institutional l
 |---|---|
 | `index.html` | Single page. Semantic HTML. Inline dark-mode toggle script. |
 | `styles.css` | Design tokens, layout, responsive breakpoints. |
-| `favicon.svg` | Kestrel hovering silhouette in Ocean Machine teal. |
+| `favicon.svg` | Compass needle in teal. |
 | `DEPLOY.md` | Step-by-step deployment instructions (GitHub Pages path). |
 
 ## Brand
 
-- Ocean Machine teal `#01696F` (light) / `#4F98A3` (dark).
+- Teal `#01696F` (light) / `#4F98A3` (dark).
 - Warm beige background `#f8f7f3` (light) / near-black `#131310` (dark).
 - Inter for body, Instrument Serif for display.
+- Wordmark is lowercase: `orient`.
 - No em-dashes. No en-dashes. Hyphens with spaces only.
-
-## Contact
-
-Ian McDonald, Ocean Machine - [imc@oceanmachine.ai](mailto:imc@oceanmachine.ai)
