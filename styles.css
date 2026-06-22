@@ -420,17 +420,29 @@ button {
   padding: var(--space-6) var(--space-8);
   display: grid;
   grid-template-columns: 130px 1fr;
-  gap: var(--space-6);
+  grid-template-rows: auto auto;
+  column-gap: var(--space-6);
+  row-gap: var(--space-2);
   align-items: start;
 }
 .t-card:hover {
   border-color: var(--color-primary);
 }
 .t-meta {
+  grid-column: 1;
+  grid-row: 1 / span 2;
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
   padding-top: var(--space-1);
+}
+.t-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.t-card p {
+  grid-column: 2;
+  grid-row: 2;
 }
 .t-day {
   font-family: var(--font-display);
@@ -445,7 +457,7 @@ button {
 }
 .t-card h3 {
   font-size: var(--text-lg);
-  margin-bottom: var(--space-2);
+  margin-bottom: 0;
 }
 .t-card p {
   font-size: var(--text-base);
@@ -460,12 +472,23 @@ button {
 @media (max-width: 640px) {
   .t-card {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     padding: var(--space-5);
   }
   .t-meta {
+    grid-column: 1;
+    grid-row: 1;
     flex-direction: row;
     align-items: baseline;
     gap: var(--space-3);
+  }
+  .t-card h3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .t-card p {
+    grid-column: 1;
+    grid-row: 3;
   }
 }
 
