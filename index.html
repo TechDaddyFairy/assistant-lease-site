@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>orient - the rent is a direction. we point at it.</title>
+    <title>orient - a data-driven brief on what to charge rent, where and why</title>
     <meta
       name="description"
-      content="orient takes an address and points at the right rent, with a one-page dossier behind every recommendation. Single-tenant, catchment-bounded, audit-ready. Built for Australian institutional residential operators."
+      content="orient is a data-driven brief on what to charge rent, where and why. Pricing Brief for the weekly read, Pricing Deep Dive for the board paper. Catchment-bounded, audit-ready, human-reviewed. Built for Australian institutional residential operators."
     />
-    <meta property="og:title" content="orient" />
+    <meta property="og:title" content="orient - what to charge rent, where and why" />
     <meta
       property="og:description"
-      content="The rent is a direction. We point at it. Every recommendation has a one-page defence. Built for Australian institutional leasing teams."
+      content="A data-driven brief on what to charge rent, where and why. Pricing Brief + Pricing Deep Dive for Australian institutional residential operators."
     />
     <meta name="theme-color" content="#01696F" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -32,19 +32,20 @@
             class="brand-mark"
             width="28"
             height="28"
-            viewBox="0 0 80 80"
+            viewBox="0 0 28 28"
             fill="none"
             aria-hidden="true"
           >
-            <!-- orient compass mark: surveyor needle pointing north -->
-            <path d="M40 8 L52 56 L40 48 L28 56 Z M40 8 L40 72" stroke="currentColor" stroke-width="3" fill="currentColor" stroke-linejoin="miter" />
-            <circle cx="40" cy="40" r="3" fill="var(--color-surface,#f8f7f3)" stroke="currentColor" stroke-width="2" />
+            <!-- orient compass mark: outer ring + a north-pointing arrowhead. -->
+            <circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.5" fill="none" />
+            <path d="M14 5 L18.5 18 L14 15 L9.5 18 Z" fill="currentColor" />
+            <circle cx="14" cy="14" r="1.2" fill="var(--color-surface,#f8f7f3)" />
           </svg>
           <span class="brand-text">orient</span>
         </a>
         <nav class="primary-nav" aria-label="Primary">
           <a href="#how">How it works</a>
-          <a href="#dossier">The dossier</a>
+          <a href="#week">A week in the life</a>
           <a href="#moat">Why it matters</a>
           <a href="#who">Who it's for</a>
         </nav>
@@ -55,7 +56,7 @@
             data-theme-toggle
             aria-label="Switch to dark mode"
           ></button>
-          <a class="btn btn-primary" href="/try">Try it on one unit</a>
+          <a class="btn btn-primary" href="#contact">Book a demo</a>
         </div>
       </div>
     </header>
@@ -66,18 +67,19 @@
         <div class="container hero-inner">
           <p class="eyebrow">Pricing, with direction</p>
           <h1 class="hero-title">
-            The rent is a direction.<br />
-            We point at it.
+            A data-driven brief on what to charge rent,<br />
+            where and why.
           </h1>
           <p class="hero-sub">
-            orient takes an address and points at the right rent. Behind every number is a
-            one-page dossier - comparable evidence, scarcity signals, lease term and incentive
-            guidance, and a short narrative. Reviewed and signed by a named human.
-            Single-tenant by design.
+            orient gives every unit type in every asset a defensible weekly rent. Two outputs,
+            same engine: the <strong>Pricing Brief</strong> for the weekly read, the
+            <strong>Pricing Deep Dive</strong> for the board paper. Built from the live
+            competitor set inside a strict local catchment. Reviewed and signed by a named
+            human. Single-tenant by design.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="/try">Try it on one unit</a>
-            <a class="btn btn-ghost" href="#dossier">See a dossier</a>
+            <a class="btn btn-primary" href="#contact">Book a demo</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
           </div>
 
           <!-- Abstract catchment diagram -->
@@ -114,11 +116,11 @@
                   <circle r="10" fill="var(--color-primary)" />
                   <circle r="18" fill="none" stroke="var(--color-primary)" stroke-opacity="0.5" />
                 </g>
-                <text x="0" y="42" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="11" font-family="Inter, system-ui">Subject unit</text>
-                <text x="0" y="-130" text-anchor="middle" fill="currentColor" opacity="0.4" font-size="11" font-family="Inter, system-ui">Local catchment</text>
+                <text x="0" y="42" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="11" font-family="Inter, system-ui">Subject asset</text>
+                <text x="0" y="-130" text-anchor="middle" fill="currentColor" opacity="0.4" font-size="11" font-family="Inter, system-ui">3km catchment</text>
               </g>
             </svg>
-            <figcaption>Every dossier is anchored in a real-world catchment, not a national pool.</figcaption>
+            <figcaption>Every recommendation is bounded by a real-world catchment, not a national pool.</figcaption>
           </figure>
         </div>
       </section>
@@ -127,186 +129,159 @@
       <section id="how" class="section section-how">
         <div class="container">
           <p class="eyebrow">How it works</p>
-          <h2 class="section-title">The leasing team enters a unit. orient returns a dossier.</h2>
+          <h2 class="section-title">An assistant, not an autopilot.</h2>
           <p class="section-lede">
-            A pricing recommendation that cannot be defended is worth nothing. orient inverts
-            the usual flow: every unit input produces a one-page dossier with the evidence,
-            the scarcity read, the lease term and incentive guidance, and the narrative
-            behind the recommended weekly rent. The leasing team reviews. The asset manager
-            signs.
+            orient proposes. The leasing team applies context. The asset manager reviews and signs.
+            Every Brief and every Deep Dive is captured, traceable, and built to be read by an
+            investment committee or a regulator.
           </p>
 
           <ol class="steps" role="list">
             <li class="step">
               <div class="step-num" aria-hidden="true">01</div>
-              <h3>Enter the unit</h3>
+              <h3>Catchment-bounded comp set</h3>
               <p>
-                The operator enters as much as influences price: address, type, bedrooms,
-                bathrooms, parking, view, floor, recent works, target start date. orient
-                accepts what is known and continues without what is not.
+                For each subject asset, the assistant draws the live competitor offerings inside a
+                strict local catchment - default 3km, configurable. The comp set is auditable, and
+                every recommendation traces back to the listings that drove it. No national pool.
+                No cross-tenant sharing.
               </p>
             </li>
             <li class="step">
               <div class="step-num" aria-hidden="true">02</div>
-              <h3>Assemble the catchment</h3>
+              <h3>Standing prices with a freshness window</h3>
               <p>
-                orient pulls the closest structural matches inside a strict local catchment,
-                widening the radius only if the cohort is too small to defend. Every comp is
-                a real listing with a real address.
+                Every unit type carries a standing recommended weekly rent with an explicit TTL.
+                When the leasing team opens an asset, they see exactly how fresh each rent is. The
+                model only re-runs when the operator says so.
               </p>
             </li>
             <li class="step">
               <div class="step-num" aria-hidden="true">03</div>
-              <h3>Read the scarcity signal</h3>
+              <h3>Outlier detection</h3>
               <p>
-                Days-on-market, active listings, lease-up velocity, vacancy, supply pipeline,
-                migrant arrivals, employment growth, price-cut frequency. Eight signals,
-                weighted and z-scored, land on a band from Glut to Acute.
+                When a refreshed standing price moves more than a configured threshold against its
+                previous standing price, it is flagged for human review before any Brief is signed
+                off. No-one is blindsided by a 12% jump from a single new comp landing.
               </p>
             </li>
             <li class="step">
               <div class="step-num" aria-hidden="true">04</div>
-              <h3>Produce the dossier</h3>
+              <h3>Override capture with reason chips</h3>
               <p>
-                A one-page document: recommended weekly rent with confidence, the comp table,
-                the scarcity panel, the lease term and incentive matrix, and a short
-                narrative where every sentence cites a data point.
+                The leasing team can override any recommended rent with one of six structured
+                reasons (renovated, corner, ground floor, view, recent vacancy, other) plus a
+                free-text note. Every override is logged against the Brief run-id.
               </p>
             </li>
             <li class="step">
               <div class="step-num" aria-hidden="true">05</div>
-              <h3>Review, sign, log</h3>
+              <h3>Signed Brief, with Deep Dive on demand</h3>
               <p>
-                The leasing team can accept, override, or annotate. The asset manager signs.
-                Every dossier is archived against its run-id with the comps, the model, the
-                overrides, the reviewer, and the timestamp.
+                Every pricing decision lands in a signed Pricing Brief: the recommended rent, the
+                comp set, the model version, the override reasons, the freshness window, and the
+                named human who reviewed it. When a rent decision needs to clear an IC or a
+                refinance binder, the same data extends into a Pricing Deep Dive - cohort
+                analysis, lease-up curves, sensitivity scenarios, written rationale. Audit trail
+                as a product feature.
               </p>
             </li>
           </ol>
         </div>
       </section>
 
-      <!-- THE DOSSIER -->
-      <section id="dossier" class="section section-week">
+      <!-- A WEEK IN THE LIFE -->
+      <section id="week" class="section section-week">
         <div class="container narrow">
-          <p class="eyebrow">The dossier</p>
-          <h2 class="section-title">One page. Every recommendation. Every time.</h2>
+          <p class="eyebrow">A week in the life</p>
+          <h2 class="section-title">What orient does for the leasing team.</h2>
           <p class="section-lede">
-            The dossier is the product. Eight components, one page, signed by a named human.
-            Built to be read by a leasing executive, an asset manager, an investment
-            committee, or a regulator without changing a word.
+            The asset manager is accountable for weekly rent decisions across a portfolio of
+            institutional residential assets. The on-site leasing team is accountable for
+            converting enquiries at the front desk. Neither writes rules, neither tunes models.
+            Both review what orient proposes, apply judgement, and act.
           </p>
 
           <div class="timeline" role="list">
             <article class="t-card" role="listitem">
               <div class="t-meta">
-                <span class="t-day">01</span>
-                <span class="t-time">Header</span>
+                <span class="t-day">Monday</span>
+                <span class="t-time">08:42</span>
               </div>
-              <h3>Recommended weekly rent, confidence, lease term, incentive.</h3>
+              <h3>Standing prices refresh overnight.</h3>
               <p>
-                The number first, then the confidence band, the recommended lease term, and
-                the structured incentive guidance. Everything the leasing executive needs
-                to quote a prospect at the front desk in five seconds.
+                The assistant pulls the latest comp listings inside each asset's catchment, recomputes
+                the standing weekly rent for every unit type, and flags the moves that breach the
+                portfolio's outlier threshold. The asset manager opens a queue and sees a short,
+                ranked list - not a wall of data.
               </p>
             </article>
 
             <article class="t-card" role="listitem">
               <div class="t-meta">
-                <span class="t-day">02</span>
-                <span class="t-time">Comp table</span>
+                <span class="t-day">Tuesday</span>
+                <span class="t-time">10:15</span>
               </div>
-              <h3>Five to eight closest structural matches with addresses.</h3>
+              <h3>The asset manager reviews the flagged assets.</h3>
               <p>
-                Real listings, real addresses, real asking rents. Sorted by structural
-                distance. Every comp is a row a human can recognise, walk past, and verify.
-                No abstracted suburb medians standing in for evidence.
+                Three two-bedrooms in an inner-city asset have moved up 4.2% week-on-week. The
+                assistant shows the exact six comps inside the 3km ring that drove the move, and
+                the narrative that summarises why. The asset manager agrees with two, overrides
+                the third with a "recent vacancy" reason chip and a one-line note. The override
+                is logged.
               </p>
             </article>
 
             <article class="t-card" role="listitem">
               <div class="t-meta">
-                <span class="t-day">03</span>
-                <span class="t-time">Scarcity panel</span>
+                <span class="t-day">Wednesday</span>
+                <span class="t-time">14:30</span>
               </div>
-              <h3>A quadrant plot and a band: Glut, Soft, Balanced, Tight, Acute.</h3>
+              <h3>The on-site leasing team answers an enquiry.</h3>
               <p>
-                Eight weighted signals, z-scored against the national distribution. A unit
-                in an Acute suburb prices differently from the same unit in a Glut suburb,
-                and the dossier shows the operator exactly why.
+                A prospect calls asking for the weekly rent on a one-bedroom in a different asset.
+                The leasing executive opens the asset in orient, reads the current Pricing Brief
+                for that unit type with the freshness window visible, and quotes the rent. No
+                spreadsheet, no email to head office. The quoted number is the same number the
+                asset manager signed off on Monday.
               </p>
             </article>
 
             <article class="t-card" role="listitem">
               <div class="t-meta">
-                <span class="t-day">04</span>
-                <span class="t-time">Charts</span>
+                <span class="t-day">Thursday</span>
+                <span class="t-time">11:00</span>
               </div>
-              <h3>Rent distribution, days-on-market curve, 12-month trend, yield.</h3>
+              <h3>The asset manager signs the weekly Pricing Brief.</h3>
               <p>
-                Four small multiples on one row. Enough to see where this unit sits in the
-                market and how the market has moved. Not enough to drown the page.
+                Each asset gets a Pricing Brief: the current standing rents, the changes since
+                last week, the comp set, the overrides applied, and the market context line. The
+                asset manager adds a name to the footer. The Brief is ready to send to the asset
+                owner, the investment committee, or a regulator - because it is built to be read
+                by all three. When the IC asks for more depth, the same run extends into a
+                Pricing Deep Dive in one click.
               </p>
             </article>
 
             <article class="t-card" role="listitem">
               <div class="t-meta">
-                <span class="t-day">05</span>
-                <span class="t-time">Signal tiles</span>
+                <span class="t-day">Friday</span>
+                <span class="t-time">16:00</span>
               </div>
-              <h3>Transport, schools, amenity, supply, demand, planning.</h3>
+              <h3>The audit trail closes the loop.</h3>
               <p>
-                A grid of small tiles, each summarising a structured signal that influenced
-                the recommendation. Hover for the source and the value. Every tile is
-                clickable through to the underlying data.
-              </p>
-            </article>
-
-            <article class="t-card" role="listitem">
-              <div class="t-meta">
-                <span class="t-day">06</span>
-                <span class="t-time">Narrative</span>
-              </div>
-              <h3>Around 200 words. Every sentence cites a data point.</h3>
-              <p>
-                Not generic prose. The narrative reads the comp table, the scarcity panel,
-                the charts, and the signal tiles, and explains in plain English why this
-                weekly rent is the right one and what would move it.
-              </p>
-            </article>
-
-            <article class="t-card" role="listitem">
-              <div class="t-meta">
-                <span class="t-day">07</span>
-                <span class="t-time">Lease term and incentive</span>
-              </div>
-              <h3>Five rows with a recommended row highlighted.</h3>
-              <p>
-                Six, nine, twelve, eighteen, twenty-four months. For each, the suggested
-                weekly rent, the suggested incentive (weeks free, fitout, white goods), and
-                the expected net yield. The leasing team has the negotiation matrix on the
-                page.
-              </p>
-            </article>
-
-            <article class="t-card" role="listitem">
-              <div class="t-meta">
-                <span class="t-day">08</span>
-                <span class="t-time">Sensitivity</span>
-              </div>
-              <h3>Three scenarios: speed, balanced, max yield.</h3>
-              <p>
-                The same unit priced for the fastest lease-up, the balanced view, and the
-                highest defensible yield. The operator chooses which scenario the property
-                runs on, and the dossier shows the trade.
+                Every refresh, every flag, every override, every signed Brief, every Deep Dive
+                is captured against its run-id. If anyone asks, six months from now, why the rent
+                on a specific unit moved on a specific week, the answer is one click away - with
+                the comps, the model, the reviewer, and the timestamp attached.
               </p>
             </article>
           </div>
 
           <p class="footnote">
-            The dossier is exportable as a single PDF. Every dossier is archived against its
-            run-id. Six months later, an asset manager can pull the exact dossier that drove
-            a specific decision and read it as it was signed.
+            The personas above are composites built from conversations with asset managers and
+            on-site leasing teams across the Australian institutional rental sector. Asset names,
+            addresses, and operator identities have been removed.
           </p>
         </div>
       </section>
@@ -322,41 +297,42 @@
               <p class="pillar-num">01</p>
               <h3>Single-tenant, no pooled data</h3>
               <p>
-                The dominant North American pricing tools aggregate competitive data across
-                all their clients. That is the design choice now under DOJ consent decree in
-                the US, state-level bans accelerating, and increasing regulatory attention
-                in Australia. orient does not pool. Each operator's catchment data drives
-                only their own dossiers.
+                The dominant North American pricing tools aggregate competitive data across all
+                their clients. That is the design choice now under DOJ consent decree in the US,
+                state-level bans accelerating, and increasing regulatory attention in Australia.
+                orient does not pool. Each operator's catchment data drives only their own
+                recommendations.
               </p>
             </article>
             <article class="pillar">
               <p class="pillar-num">02</p>
-              <h3>Provenance, not a number</h3>
+              <h3>Catchment, not corpus</h3>
               <p>
-                A pricing recommendation that arrives without evidence is a guess in a
-                suit. Every orient recommendation comes with a one-page dossier the leasing
-                team can read, defend, and sign. That is the product. The number is a
-                by-product of the evidence.
+                Every recommendation starts from "every competitor listing within 3km of this asset,
+                refreshed in the last 60 days." That is how a leasing team actually thinks about
+                its market - and it is why recommendations are defensible to an investment
+                committee in a way a national-corpus number never is.
               </p>
             </article>
             <article class="pillar">
               <p class="pillar-num">03</p>
-              <h3>Scarcity-aware</h3>
+              <h3>Standing prices, not always-on recalculation</h3>
               <p>
-                The same unit in the same suburb prices differently when stock is acute and
-                when stock is in glut. orient reads eight structured scarcity signals and
-                lands a band on every dossier. Operators see the market they are pricing
-                into, not just the comp table.
+                Operators do not need a real-time price for every unit every minute. They need a
+                fresh, defensible weekly rent that survives until they revisit it. orient gives
+                every unit type a recommended rent with a freshness window the operator controls.
+                The model re-runs only when the operator says so.
               </p>
             </article>
             <article class="pillar">
               <p class="pillar-num">04</p>
               <h3>Assistant, not autopilot</h3>
               <p>
-                orient proposes. The leasing executive applies context. The asset manager
-                reviews and signs. Every override is captured with structured reasons. The
-                asset owner can trace any rent decision back to the dossier, the comps, the
-                model, the override, and the named person who signed it.
+                orient is built to work with the leasing team, not over the top of it. orient
+                proposes, the leasing executive applies context, the asset manager reviews and
+                signs. Every override is captured with structured reasons. The asset owner can
+                trace any rent decision back to the comp set, the model, the override, the
+                reviewer, and the named person who signed it.
               </p>
             </article>
             <article class="pillar">
@@ -365,8 +341,8 @@
               <p>
                 Built in Australia, against Australian listing data, with Australian catchment
                 radii, against the Australian PMS landscape, and with the Australian regulatory
-                tailwind in mind. We speak the language of postcodes, suburbs, weekly rent,
-                and the local agent ecosystem.
+                tailwind in mind. We speak the language of postcodes, suburbs, weekly rent (not
+                monthly), and the local agent ecosystem.
               </p>
             </article>
           </div>
@@ -383,9 +359,9 @@
             <article class="who-card">
               <h3>Build-to-Rent operators</h3>
               <p>
-                33 operating platforms, 51,000 apartments live, a sector shifting from
-                delivery to operations. orient gives each operator a single-tenant,
-                dossier-led pricing layer across every asset in the portfolio.
+                33 operating platforms, 51,000 apartments live, a sector shifting from delivery to
+                operations. orient gives each operator a single-tenant, audit-ready Pricing Brief
+                for every asset, with Deep Dives on demand when an IC or investor needs depth.
               </p>
             </article>
             <article class="who-card">
@@ -399,17 +375,17 @@
             <article class="who-card">
               <h3>Family offices and HNW landlords</h3>
               <p>
-                Relationship-led, smaller per family, fast decisions once trust is
-                established. orient gives a defensible weekly rent with a dossier behind
-                it, without requiring an in-house revenue management team.
+                Relationship-led, smaller per family, fast decisions once trust is established.
+                orient gives a defensible weekly rent that stands up to family-office governance
+                without requiring an in-house revenue management team.
               </p>
             </article>
             <article class="who-card">
               <h3>Adjacent verticals</h3>
               <p>
-                Self-storage, holiday and caravan parks, and commercial office leasing share
-                the same engine. Per-unit capacity, local catchment, public competitor
-                rates, dossier-led recommendations.
+                Self-storage, holiday and caravan parks, and commercial office leasing share the
+                same engine. Per-unit capacity, local catchment, public competitor rates,
+                weekly repricing.
               </p>
             </article>
           </div>
@@ -419,13 +395,22 @@
       <!-- CONTACT -->
       <section id="contact" class="section section-contact">
         <div class="container narrow">
-          <p class="eyebrow">Try it</p>
-          <h2 class="section-title">Try it on one unit.</h2>
+          <p class="eyebrow">Book a demo</p>
+          <h2 class="section-title">A 60-minute walkthrough.</h2>
           <p class="section-lede">
-            Paste an address. Watch the agent work. See a defensible rent with the receipts.
+            Two personas, three live screens. The asset manager's weekly review surface. The
+            on-site enquiry-time view. A signed Pricing Brief and the Deep Dive it extends into.
+            Then 48 minutes of your hardest questions.
           </p>
           <div class="contact-card">
-            <a class="btn btn-primary" href="/try">Try it on one unit</a>
+            <div>
+              <p class="contact-label">Direct</p>
+              <p class="contact-value">
+                <a href="mailto:imc@oceanmachine.ai">imc@oceanmachine.ai</a>
+              </p>
+              <p class="contact-name">Ian McDonald, Ocean Machine</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:imc@oceanmachine.ai?subject=orient%20demo%20request">Request a demo</a>
           </div>
         </div>
       </section>
@@ -434,10 +419,10 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="footer-brand">
-          orient &nbsp;&middot;&nbsp; <a href="https://withorient.com">withorient.com</a> &nbsp;&middot;&nbsp; Pricing, with direction
+          orient &nbsp;&middot;&nbsp; <a href="https://assistant.lease">assistant.lease</a> &nbsp;&middot;&nbsp; Pricing, with direction
         </p>
         <p class="footer-meta">
-          Single-tenant. Dossier-led. Scarcity-aware. Australian.
+          Single-tenant. Catchment-bounded. Audit-ready. Australian.
         </p>
       </div>
     </footer>

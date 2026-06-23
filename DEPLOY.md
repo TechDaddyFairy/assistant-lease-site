@@ -1,6 +1,6 @@
-# Deployment Instructions - Canary (assistant.lease)
+# Deployment Instructions - orient (assistant.lease)
 
-This site is a static three-file bundle for the Canary marketing site, served at the apex `assistant.lease`. The recommended path is **GitHub Pages with a custom domain**, keeping deployment entirely inside GitHub. Do not wire this through Vercel.
+This site is a static three-file bundle for the orient marketing site, served at the apex `assistant.lease`. The recommended path is **GitHub Pages with a custom domain**, keeping deployment entirely inside GitHub. Do not wire this through Vercel.
 
 ---
 
@@ -25,7 +25,7 @@ git init
 git config user.name  "Ian McDonald"
 git config user.email "imc@icsmultimedia.com.au"
 git add .
-git commit -m "Initial commit - Canary marketing site"
+git commit -m "Initial commit - orient marketing site"
 git branch -M main
 ```
 
